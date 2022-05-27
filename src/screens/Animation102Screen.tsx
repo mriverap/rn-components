@@ -4,7 +4,7 @@ import React from 'react';
 const Animation102Screen = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.purpleBox} />
+      <View style={styles.centerBox} />
     </View>
   );
 };
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  purpleBox: {
+  centerBox: {
     backgroundColor: '#F5BC9F',
     width: 150,
     height: 150,

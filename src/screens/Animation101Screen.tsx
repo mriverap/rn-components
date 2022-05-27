@@ -1,10 +1,34 @@
-import {StyleSheet, View} from 'react-native';
+import {Animated, Button, StyleSheet, View} from 'react-native';
 import React from 'react';
+import {useAnimation} from '../hooks/useAnimation';
 
 const Animation101Screen = () => {
+  const {opacity, position, fadeIn, fadeOut, startMovingPosition} =
+    useAnimation();
   return (
     <View style={styles.container}>
-      <View style={styles.purpleBox} />
+      <Animated.View
+        style={{
+          ...styles.purpleBox,
+          opacity,
+          marginBottom: 20,
+          transform: [
+            {
+              translateX: position,
+            },
+          ],
+        }}
+      />
+      <View style={{flexDirection: 'row'}}>
+        <Button
+          title="FadeIn"
+          onPress={() => {
+            fadeIn();
+            startMovingPosition(-100);
+          }}
+        />
+        <Button title="FadeOut" onPress={fadeOut} />
+      </View>
     </View>
   );
 };
