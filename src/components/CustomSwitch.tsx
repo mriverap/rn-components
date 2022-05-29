@@ -1,6 +1,5 @@
 import {View, Switch, Platform, StyleSheet} from 'react-native';
 import React, {useState} from 'react';
-import HeaderTitle from './HeaderTitle';
 
 interface Props {
   isOn: boolean;
