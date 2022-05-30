@@ -6,6 +6,9 @@ import SwitchScreen from '../screens/SwitchScreen';
 import AlertScreen from '../screens/AlertScreen';
 import TextInputScreen from '../screens/TextInputScreen';
 import PullToRefreshScreen from '../screens/PullToRefreshScreen';
+import SectionListScreen from '../screens/SectionListScreen';
+import ModalScreen from '../screens/ModalScreen';
+import InfiniteScrollScreen from '../screens/InfiniteScrollScreen';
 const Stack = createStackNavigator();
 
 import React from 'react';
@@ -20,6 +23,9 @@ const Navigator = () => {
       <Stack.Screen name="Alert" component={AlertScreen} />
       <Stack.Screen name="TextInput" component={TextInputScreen} />
       <Stack.Screen name="PullToRefresh" component={PullToRefreshScreen} />
+      <Stack.Screen name="SectionList" component={SectionListScreen} />
+      <Stack.Screen name="Modal" component={ModalScreen} />
+      <Stack.Screen name="InfiniteScroll" component={InfiniteScrollScreen} />
     </Stack.Navigator>
   );
 };
