@@ -9,6 +9,7 @@ import PullToRefreshScreen from '../screens/PullToRefreshScreen';
 import SectionListScreen from '../screens/SectionListScreen';
 import ModalScreen from '../screens/ModalScreen';
 import InfiniteScrollScreen from '../screens/InfiniteScrollScreen';
+import SlidesScreen from '../screens/SlidesScreen';
 const Stack = createStackNavigator();
 
 import React from 'react';
@@ -26,6 +27,7 @@ const Navigator = () => {
       <Stack.Screen name="SectionList" component={SectionListScreen} />
       <Stack.Screen name="Modal" component={ModalScreen} />
       <Stack.Screen name="InfiniteScroll" component={InfiniteScrollScreen} />
+      <Stack.Screen name="Slides" component={SlidesScreen} />
     </Stack.Navigator>
   );
 };
