@@ -51,4 +51,9 @@ export const menuItems: MenuItem[] = [
     icon: 'flower-outline',
     component: 'Slides',
   },
+  {
+    name: 'Filtered FlatList',
+    icon: 'filter-outline',
+    component: 'FilteredFlatList',
+  },
 ];
